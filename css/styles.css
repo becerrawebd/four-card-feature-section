@@ -1,0 +1,131 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: Poppins;
+  background: var(--VeryLightGray);
+  min-height: 100vh;
+}
+
+main {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 2.5em;
+  color: var(--VeryDarkBlue);
+}
+
+h1 span {
+  display: block;
+  font-weight: 600;
+}
+
+main p {
+  color: var(--GrayishBlue);
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: calc(1440px / 2.7);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+article {
+  width: 90%;
+  min-height: 250px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 10px hsla(234, 12%, 34%, 0.08);
+  text-align: left;
+  position: relative;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  article {
+    width: 25%;
+    min-width: 240px;
+    display: inline-block;
+  }
+  article:nth-child(1) {
+    transform: translate(-10%, 50%);
+  }
+  article:nth-child(2) {
+  }
+  article:nth-child(3) {
+    transform: translate(-101%, 110%);
+  }
+  article:nth-child(4) {
+    transform: translate(111%, -63%);
+  }
+}
+
+article:nth-child(1) {
+  border-top: 4px solid var(--Cyan);
+}
+article:nth-child(2) {
+  border-top: 4px solid var(--Red);
+}
+article:nth-child(3) {
+  border-top: 4px solid var(--Orange);
+}
+article:nth-child(4) {
+  border-top: 4px solid var(--Blue);
+}
+
+article h2 {
+  font-weight: 600;
+  color: var(--VeryDarkBlue);
+  margin: 0;
+  padding: 0;
+}
+
+article p {
+  line-height: 25px;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+article img {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+footer {
+  text-align: center;
+  margin: 0 0.5rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--VeryDarkBlue);
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--VeryDarkBlue);
+}
